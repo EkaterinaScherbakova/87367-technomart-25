@@ -10,7 +10,9 @@
                 <a href="index.html">
                     <img class="logo" width="220" height="47" src="img/name109x19.svg" alt="Техномарт">
                 </a>
-                <input type="search" placeholder="Поиск">
+                <form>
+                    <input type="search" placeholder="Поиск">
+                </form>
                 <a class="wishlist" href="#">Закладки: 0</a>
                 <a class="cart" href="#">Корзина: 0</a>
                 <a class="order" href="#">Оформить заказ</a>
@@ -59,15 +61,17 @@
                 <span>Цена</span>
                 <div>???</div>
                 <span>Производители</span>
-                <label><input type="checkbox" name="bosch">Bosch</label>
-                <label><input type="checkbox" name="interskol">Интерскол</label>
-                <label><input type="checkbox" name="Makita">Makita</label>
-                <label><input type="checkbox" name="Dewalt">Dewalt</label>
-                <label><input type="checkbox" name="Hitachi">Hitachi</label>
-                <span>Питание</span>
-                <label><input type="radio" name="supply" value="battery">Аккумуляторные</label>
-                <label><input type="radio" name="supply" value="network">Сетевые</label>
-                <button type="button" name="show">Показать</button>
+                <form>
+                    <label><input type="checkbox" name="bosch">Bosch</label>
+                    <label><input type="checkbox" name="interskol">Интерскол</label>
+                    <label><input type="checkbox" name="Makita">Makita</label>
+                    <label><input type="checkbox" name="Dewalt">Dewalt</label>
+                    <label><input type="checkbox" name="Hitachi">Hitachi</label>
+                    <span>Питание</span>
+                    <label><input type="radio" name="supply" value="battery">Аккумуляторные</label>
+                    <label><input type="radio" name="supply" value="network">Сетевые</label>
+                    <button type="submit" name="show">Показать</button>
+                </form>
             </section>
             <section>
                 <h2 class="visually-hidden">Каталог перфораторов</h2>
@@ -197,7 +201,7 @@
                 </ul>
             </div>
             <div class="footer-bottom">
-                <p class="copyrights">© 2010–2019 Компания «Техномарт»<br>
+                <p class="copyrights">&copy; 2010–2019 Компания «Техномарт»<br>
                     Все права защищены</p>
                 <ul class="social">
                     <li><a href="#" target="_blank">ВКонтакте</a></li>
@@ -215,7 +219,9 @@
                 <a class="btn">Оформить заказ</a>
                 <button type="button">Продолжить покупки</button>
             </form>
-            <span class="modal-close">x</span>
+            <button class="modal-close" type="button">
+                Закрыть
+            </button>
         </section>
     </body>
 </html>
