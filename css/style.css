@@ -24,16 +24,27 @@ a {
     background-color: #ee3643;
 }
 
+.btn:hover,
+.btn:focus {
+    background-color: #ca2c37;
+}
+
+.btn:active {
+    background-color: #ba2732;
+}
+
 .logo {
     background-color: #ee3643;
 }
 
 .logo:hover,
-.logo:active,
 .logo:focus {
     background-color: #ca2c37;
 }
 
+.logo:active {
+    background-color: #ba2732;
+}
 .main-header {
     background-color: #f4f7f9;
 }
@@ -56,14 +67,22 @@ a {
     color: #000000;
 
     background-color: #ffffff;
+
+    outline: none;
 }
 
 .header-top a {
     color: inherit;
 }
 
-.header-top a:hover {
+.action a:hover,
+.action a:focus {
     background-color: #212a3a;
+}
+
+.action a:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .header-top a.order {
@@ -72,6 +91,11 @@ a {
 
 a.order:hover {
     background-color: #5fbb2d;
+}
+
+a.order:active {
+    background-color: #518534;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .header-middle .main-title {
@@ -103,6 +127,17 @@ a.order:hover {
     background-color: #ffffff;
 }
 
+.authenticate a:hover,
+.authenticate a:focus {
+    color: #ee3643;
+
+    outline: none;
+}
+
+.authenticate a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .personal .user-name {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
@@ -123,6 +158,18 @@ a.order:hover {
     text-decoration: underline;
 }
 
+.profile-menu a:hover,
+.profile-menu a:focus {
+    color: #ee3643;
+
+    outline: none;
+}
+
+.personal a:active,
+.profile-menu a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .header-bottom nav {
     background-color: #32425c;
 }
@@ -136,6 +183,16 @@ a.order:hover {
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: #293449;
+}
+
+.main-nav a:active {
+    background-color: #32425c;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .features {
@@ -177,12 +234,21 @@ a.order:hover {
     font-weight: bold;
 }
 
-.features-list b {
+.features-list a {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
 
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.features-list a:hover,
+.features-list a:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features-list a:active {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .fearures-slider {
@@ -298,11 +364,16 @@ h1.pop-titles {
     border: none;
 }
 
-/* .services-slider .button {
+.services-slider-item.active button {
     color: #32425c;
 
     background-color: #ffffff;
-} */
+}
+
+.services-slider-item:not(.active) button:hover,
+.services-slider-item:not(.active) button:focus {
+    background-color: #293449;
+}
 
 .services-slider h3 {
     font-family: "Cuprum", Arial, sans-serif;
@@ -349,8 +420,23 @@ h1.pop-titles {
     list-style: none;
 }
 
-.footer-nav ul:last-child {
+.footer-nav .second-nav {
     color : #ffd180;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    text-decoration: underline;
+
+    outline: none;
+}
+
+.first-nav a:active {
+    color : rgba(241, 245, 247, 0.5);
+}
+
+.second-nav a:active {
+    color : rgba(255, 209, 128, 0.5);
 }
 
 .footer-bottom {
@@ -375,6 +461,14 @@ h1.pop-titles {
     border-radius: 50%;
 }
 
+.social a:hover,
+.social a:focus,
+.social a:active {
+    background-color: #ee3643;
+
+    outline: none;
+}
+
 .social .vk {
     background-image: url("../img/icon/vk-icon.svg");
     background-repeat: no-repeat;
@@ -397,6 +491,15 @@ h1.pop-titles {
     color: #ffd180;
 }
 
+.footer-bottom .creator:hover,
+.footer-bottom .creator:hover {
+    text-decoration: underline;
+    outline: none;
+}
+
+.footer-bottom .creator:active {
+    color: #ee3643;
+}
 
 main .breadcrumbs {
     list-style: none;
@@ -419,6 +522,22 @@ main .breadcrumbs {
     text-transform: uppercase;
 
     background-color: #f7f3ec;
+}
+
+.sorting a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting a:hover,
+.sorting a:focus {
+    color: #000000;
+
+    border-bottom: 1px solid #ee3643;
+    outline: none;
+}
+
+.sorting a:active {
+    color: #ee3643;
 }
 
 .filter span {
@@ -461,6 +580,15 @@ main .breadcrumbs {
     background-color: #ee3643;
 
 
+    border: 1px solid #ee3643;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+    border: 1px solid #bdc6ca;
+}
+
+.pagination a:active {
     border: 1px solid #ee3643;
 }
 
