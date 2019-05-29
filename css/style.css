@@ -4,7 +4,6 @@ body {
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
-    line-height: 24px;
     color: #000000;
 
     background-color: #ffffff;
@@ -13,6 +12,14 @@ body {
 a {
     text-decoration: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 
 .container {
     width: 960px;
@@ -135,14 +142,10 @@ a.order:active {
     font-style: italic;
     line-height: 23px;
     color: #ee3643;
-
-    background-color: rgba(250, 0, 0, 0.3);
 }
 
 .header-middle .info {
     width: 300px;
-
-    background-color: rgba(0, 250, 0, 0.3);
 }
 
 .header-middle .phone {
@@ -486,6 +489,8 @@ h1.pop-titles {
 .services p {
     margin: 0;
     padding: 0;
+
+    line-height: 24px;
 }
 
 .services-slider {
@@ -559,6 +564,10 @@ h1.pop-titles {
     text-transform: uppercase;
 }
 
+.about-us {
+    line-height: 24px;
+}
+
 .about-us .forwarder {
     margin: 0;
     padding: 0;
@@ -575,6 +584,10 @@ h1.pop-titles {
 
 .contacts {
     width: 300px;
+}
+
+.contacts p {
+    line-height: 24px;
 }
 
 .contacts img {
@@ -755,6 +768,32 @@ main .breadcrumbs {
     color: #000000;
 }
 
+.catal-column-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    width: 220px;
+}
+
+.catalog {
+    width: 700px;
+}
+
+.sorting {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 21px;
+    padding-left: 19px;
+    padding-right: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    background-color: #f7f3ec;
+}
+
 .filter h2,
 .sorting span,
 .sorting a {
@@ -765,6 +804,14 @@ main .breadcrumbs {
     text-transform: uppercase;
 
     background-color: #f7f3ec;
+}
+
+.filter h2 {
+    margin: 0;
+    margin-bottom: 14px;
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .sorting a {
@@ -781,6 +828,16 @@ main .breadcrumbs {
 
 .sorting a:active {
     color: #ee3643;
+}
+
+
+h1.pop-titles {
+    margin-left: 0;
+    padding-left: 30px;
+    padding-top: 32px;
+    padding-bottom: 34px;
+
+    background-color: #f2f6f8;
 }
 
 .filter span {
@@ -800,6 +857,16 @@ main .breadcrumbs {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+.catalog .item-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog .item-product {
+    margin-bottom: 21px;
 }
 
 .pagination {
@@ -836,5 +903,14 @@ main .breadcrumbs {
 }
 
 .about-perf {
+    padding-top: 67px;
+    padding-bottom: 67px;
+
+    line-height: 24px;
+
     background-color: #f4f7f9;
+}
+
+.about-perf p {
+    margin: 0;
 }
