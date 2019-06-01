@@ -15,7 +15,7 @@
                         <img src="img/invalid-name.svg" width="109" height="19" alt="Техномарт">
                     </a>
                     <form>
-                        <input type="search" placeholder="Поиск">
+                        <input class="search" type="search" placeholder="Поиск:">
                     </form>
                     <div class="action">
                         <a class="wishlist" href="#">Закладки: 0</a>
@@ -32,12 +32,12 @@
                         и инструментов для ремонта
                     </h1>
                     <div class="info">
-                        <a class="phone" href="tel:+78125550555">+7(812)555-05-55</a>
-                        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+                        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
                     </div>
                     <div>
                         <ul class="authenticate">
-                            <li><a href="#">Войти</a></li>
+                            <li><a class="enter" href="#">Войти</a></li>
                             <li><a href="#">Регистрация</a></li>
                         </ul>
                     </div>
@@ -96,35 +96,43 @@
             <section class="features container">
                     <h2 class="visually-hidden">Преимущества</h2>
                     <div class="features-list">
-                        <div class="materials">
-                            <h3>Материалы</h3>
-                            <a href="#">На любой вкус</a>
+                        <div class="fearures-wrapper-top">
+                            <div class="materials feature-item">
+                                <h3>Материалы</h3>
+                                <a class="features-btn" href="#">На любой вкус</a>
+                            </div>
+                            <div class="tool feature-item">
+                                <h3>Инструмент</h3>
+                                <a class="features-btn" href="#">На все случаи</a>
+                            </div>
+                            <div class="tech feature-item">
+                                <h3>Техника</h3>
+                                <a class="features-btn" href="#">Для стройки</a>
+                            </div>
                         </div>
-                        <div class="tool">
-                            <h3>Инструмент</h3>
-                            <a href="#">На все случаи жизни</a>
-                        </div>
-                        <div class="tech">
-                            <h3>Техника</h3>
-                            <a href="#">Для стройки</a>
-                        </div>
-                        <div class="features-slider-drills">
-                                <h3>Дрели</h3>
-                                <span>Соседям на радость!</span>
-                                <a class="btn" href="catalog.html">Открыть каталог</a>
-                        </div>
-                        <div class="sales">
-                            <h3>Скидки 50%</h3>
-                            <a href="#">на 350 товаров</a>
-                        </div>
-                        <div class="delivery">
-                            <h3>Delivery</h3>
-                            <a href="#">Бесплатно</a>
-                        </div>
-                        <div class="features-slider-perforators">
-                            <h3>Перфораторы</h3>
-                            <span>Настоящие мужские игрушки</span>
-                            <a class="btn" href="catalog.html">Открыть каталог</a>
+                        <div class="fearures-wrapper-bottom">
+                            <div class="fearures-wrapper-slider">
+                                <div class="features-slider features-slider-drills">
+                                    <h3>Дрели</h3>
+                                    <span>Соседям на радость!</span>
+                                    <a class="btn" href="catalog.html">Открыть каталог</a>
+                                </div>
+                                <div class="features-slider features-slider-perforators">
+                                    <h3>Перфораторы</h3>
+                                    <span>Настоящие мужские игрушки</span>
+                                    <a class="btn" href="catalog.html">Открыть каталог</a>
+                                </div>
+                            </div>
+                            <div class="fearures-wrapper-right">
+                                <div class="sales feature-item">
+                                    <h3>Скидки 50%</h3>
+                                    <a class="features-btn" href="#">на 350 товаров</a>
+                                </div>
+                                <div class="delivery feature-item">
+                                    <h3>Доставка</h3>
+                                    <a class="features-btn" href="#">Бесплатно</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
