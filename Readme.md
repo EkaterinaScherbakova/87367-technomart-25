@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Екатерина Щербакова](https://up.htmlacademy.ru/htmlcss/25/user/87367).
-* Наставник: [Максим Клевцов](https://htmlacademy.ru/profile/maxklevtsov).
+* Наставник: [Алексей Пудников](https://htmlacademy.ru/profile/id71418).
 
 ---
 
