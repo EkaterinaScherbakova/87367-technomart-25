@@ -140,7 +140,8 @@ input[type="radio"].visually-hidden {
     background-color: #f4f7f9;
 }
 
-.main-header * {
+header *,
+footer * {
     font-family: "Cuprum", Arial, sans-serif;
 }
 
@@ -731,7 +732,7 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
 }
 
-.fearures-wrapper-slider::before {
+.features-wrapper-slider::before {
     position: absolute;
     top: 50%;
     margin-top: -20px;
@@ -746,7 +747,7 @@ input[type="radio"].visually-hidden {
     transform: rotate(135deg) scale(0.73);
   }
 
-.fearures-wrapper-slider::after {
+.features-wrapper-slider::after {
     position: absolute;
     top: 50%;
     margin-top: -20px;
@@ -983,15 +984,24 @@ h1.pop-titles {
 }
 
 .services-slider {
-    margin:0;
+    margin: 0;
+    margin-top: 74px;
     padding: 0;
     list-style: none;
 }
 
-.services-slider button {
+.services-slider section {
+    display: none;
+}
+
+.services-slider label {
+    display: block;
+    width: 240px;
+    padding-left: 22px;
+
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 21px;
-    line-height: 30px;
+    line-height: 61px;
     font-weight: bold;
     color: #ffffff;
 
@@ -999,8 +1009,7 @@ h1.pop-titles {
 
     border: none;
 }
-
-.services-slider-item.active button {
+input[name="services"]:checked + label {
     color: #32425c;
 
     background-color: #ffffff;
@@ -1441,20 +1450,43 @@ h1.pop-titles {
 }
 
 .sorting {
+    position: relative;
     display: flex;
     justify-content: space-between;
 
     margin-bottom: 20px;
-    padding-left: 19px;
-    padding-right: 17px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 105px 10px 19px;
 
     background-color: #f7f3ec;
 }
 
+.sorting::before,
+.sorting::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 17px;
+
+    border: 6px solid #ffffff;
+    border-top-color: #ee3643;
+    border-top-width: 11px;
+    border-bottom-width: 0px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.sorting::before {
+    right: 49px;
+
+    transform: rotate(180deg);
+}
+
 .sorting a {
+    margin-left: 65px;
+
     color: rgba(0, 0, 0, 0.3);
+
+    border-bottom: 1px dotted #ee3643;
 }
 
 .sorting a:hover,
