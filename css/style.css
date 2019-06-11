@@ -171,63 +171,47 @@ footer * {
     color: #ffffff;
 
     background-color: #293449;
+    background-image: url("../img/icon/icon-search-grey.svg");
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 15px 13px;
 
     border: none;
+}
+
+.header-top input[type="search"]:hover {
+    background-color: #212a3a;
+    background-image: url("../img/icon/icon-search-white.svg");
 }
 
 .header-top input[type="search"]:focus {
     color: #000000;
 
     background-color: #ffffff;
+    background-image: url("../img/icon/icon-search-red.svg");
 
     outline: none;
 }
 
-.header-top .search-wrapper {
-    position: relative;
-}
-
-.header-top .search-wrapper::before {
-    content: "";
-
-    position: absolute;
-    top: 12px;
-    left: 17px;
-
-    width: 17px;
-    height: 17px;
-
-    background-image: url("../img/icon/icon-search.svg");
-    background-repeat: no-repeat;
-
-    opacity: 0.3;
-}
-
-.search-wrapper:hover::before {
-    opacity: 1;
-}
 
 
 .search::-webkit-input-placeholder {
-    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 42px;
     color:#ffffff;
+
 }
 .search::-moz-placeholder {
-    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 42px;
     color:#ffffff;
 }
 .search:-moz-placeholder {
-    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 42px;
     color:#ffffff;
 }
 .search:-ms-input-placeholder {
-    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     line-height: 42px;
     color:#ffffff;
@@ -691,12 +675,12 @@ footer * {
 
 
 
-.features-list a:hover,
-.features-list a:focus {
+.features-list .features-btn:hover,
+.features-list .features-btn:focus {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.features-list a:active {
+.features-list .features-btn:active {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -884,6 +868,7 @@ footer * {
     height: 150px;
     padding: 40px 0;
 
+    font-family: "Cuprum", sans-serif;
     text-align: center;
 
     background-color: white;
@@ -903,7 +888,6 @@ footer * {
   color: #ffffff;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
   line-height: 38px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1129,23 +1113,19 @@ input[name="services"]:checked ~ section {
 }
 .about-us {
     width: 540px;
+    line-height: 24px;
 }
 
-.about-us h2,
-.contacts h2,
-.about-perf h2 {
+.title {
     margin: 0;
     padding: 0;
     padding-bottom: 25px;
 
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
+    font-weight: normal;
     line-height: 30px;
     text-transform: uppercase;
-}
-
-.about-us {
-    line-height: 24px;
 }
 
 .about-us .forwarder {
@@ -1191,10 +1171,6 @@ input[name="services"]:checked ~ section {
 
 .contacts .btn {
     padding: 0 61px;
-}
-
-.main-footer {
-    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .footer-top,
@@ -1663,6 +1639,11 @@ input[name="services"]:checked ~ section {
     color: #ee3643;
 }
 
+.sorting-selection > a.active {
+    color: #ee3643;
+    border: none;
+}
+
 .sorting-direction {
     display: inline;
     white-space: nowrap;
@@ -1698,6 +1679,10 @@ input[name="services"]:checked ~ section {
     opacity: 1;
 }
 
+.sorting-direction .direction.active::before {
+    border-top-color: #ee3643;
+    opacity: 1;
+}
 
 h1.headline {
     margin: 20px auto 18px 0;
@@ -1726,8 +1711,6 @@ h1.headline {
 }
 
 .catalog .item-list {
-    /* display: flex;
-    justify-content: space-between; */
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
