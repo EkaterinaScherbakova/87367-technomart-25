@@ -75,6 +75,7 @@ input[type="radio"].visually-hidden {
     font-size: 14px;
     line-height: 38px;
     color: #ffffff;
+    text-align: center;
     text-transform: uppercase;
 
     background-color: #ee3643;
@@ -193,25 +194,7 @@ footer * {
     outline: none;
 }
 
-
-
-.search::-webkit-input-placeholder {
-    font-size: 17px;
-    line-height: 42px;
-    color:#ffffff;
-
-}
-.search::-moz-placeholder {
-    font-size: 17px;
-    line-height: 42px;
-    color:#ffffff;
-}
-.search:-moz-placeholder {
-    font-size: 17px;
-    line-height: 42px;
-    color:#ffffff;
-}
-.search:-ms-input-placeholder {
+.search::placeholder {
     font-size: 17px;
     line-height: 42px;
     color:#ffffff;
@@ -1170,7 +1153,7 @@ input[name="services"]:checked ~ section {
 }
 
 .contacts .btn {
-    padding: 0 61px;
+    width: 100%;
 }
 
 .footer-top,
@@ -1274,7 +1257,7 @@ input[name="services"]:checked ~ section {
     flex-grow: 1;
 
     margin: 0;
-    margin-left: 40px;
+    margin-left: 47px;
     padding: 0;
     list-style: none;
 }
@@ -1284,6 +1267,7 @@ input[name="services"]:checked ~ section {
     width: 42px;
     height: 42px;
     margin-right: 3px;
+    font-size: 0;
 
     background-color: #212a3a;
 
